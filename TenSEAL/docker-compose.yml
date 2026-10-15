@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  fhe_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tenseal_fhe_server
+    container_name: tenseal_fhe_server
+    volumes:
+      - shared_volume:/shared
+    environment:
+      - ROLE=server
+
+  fhe_client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tenseal_fhe_client
+    container_name: tenseal_fhe_client
+    volumes:
+      - shared_volume:/shared
+    environment:
+      - ROLE=client
+
+  fhe_benchmark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tenseal_fhe_benchmark
+    container_name: tenseal_fhe_benchmark
+    volumes:
+      - shared_volume:/shared
+      - ./results_ckks:/app/results_ckks
+      - ./results_bfv:/app/results_bfv
+    environment:
+      - ROLE=main
+
+volumes:
+  shared_volume:

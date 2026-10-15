@@ -1,0 +1,22 @@
+# Generated cryptographic contexts and serialized artifacts
+*.ctx
+*.pkl
+*.pickle
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Duplicate local project copy
+/TenSEAL/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

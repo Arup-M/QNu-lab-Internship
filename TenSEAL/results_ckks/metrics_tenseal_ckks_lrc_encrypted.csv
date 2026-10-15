@@ -1,0 +1,2 @@
+training_time,preparation_time,inference_time,accuracy,mse,scheme,training_mode,avg_ciphertext_size_bytes,avg_plaintext_size_bytes,avg_expansion_factor,avg_noise,prep_cpu,prep_ram_mb,train_cpu,train_ram_mb,infer_cpu,infer_ram_mb
+45.157437324523926,11.779104709625244,7.053082704544067,NA,NA,ckks,encrypted,438320.93137254904,104.0,4214.624340120664,0.0017767378253230133,101.1,168.9747371673584,99.8,168.95639038085938,99.0,0.040009498596191406

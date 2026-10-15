@@ -1,0 +1,5 @@
+tenseal
+numpy
+pandas
+scikit-learn
+psutil
